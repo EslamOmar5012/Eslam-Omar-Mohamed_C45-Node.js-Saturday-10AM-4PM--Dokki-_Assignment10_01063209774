@@ -1,6 +1,6 @@
 import { throwError, hashPassword, comparePassword } from "../../common/index.js";
 import { UserModel } from "../../db/index.js";
-import * as dbRepository from "../../db/database.repository.js";
+import { dbRepository } from "../../db/index.js";
 
 export const signup = async (inputs) => {
   // Check if user already exists using repository
